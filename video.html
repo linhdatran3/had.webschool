@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      .head .logo {
+        margin: 0rem 10rem;
+        padding: 1rem 0;
+      }
+      .line {
+        background-color: rgb(199, 197, 197);
+        height: 1px;
+        width: 100%;
+      }
+      .section9 {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section9 .vid {
+        margin: 1rem;
+      }
+
+      .section11 {
+        display: flex;
+
+        margin: 2rem 18rem;
+      }
+      .section11 .front-end {
+        justify-content: center;
+        margin-left: 100px;
+      }
+
+      .section11 .front-end button {
+        text-align: center;
+        background-color: sandybrown;
+
+        border: none;
+        padding: 1rem 1.5rem;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+      .section11 a {
+        text-decoration: none;
+        color: snow;
+        font-size: 24px;
+      }
+      a {
+        text-decoration: none;
+        color: snow;
+        font-size: 24px;
+      }
+      button {
+        background-color: sandybrown;
+        color: snow;
+
+        border: none;
+        padding: 0.7rem 1.2rem;
+      }
+      input {
+        padding: 0.5rem 1rem;
+      }
+      .section6 {
+        text-align: center;
+        justify-content: center;
+        padding: 2rem;
+        margin: 1rem 18rem;
+      }
+      h5,
+      h3 {
+        color: rgb(82, 82, 82);
+      }
+      .foot {
+        background-image: url("section10.png");
+        height: 30vh;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="logo">
+        <img src="logo.jpg" alt="" />
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="section11">
+      <div class="content">
+        <img src="content.jpg" height="300px" width="500px" alt="" />
+      </div>
+      <div class="front-end">
+        <img src="fe1.png" alt="" height="250px" width="250px" />
+        <button
+          type="button"
+          class="btn b"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >
+          Xem Ngay
+          <!-- <a
+            href="https://www.facebook.com/groups/889452008368355/?notif_id=1638222882661517&notif_t=page_linked_group_activity&ref=notif"
+            >WATCH NOW</a
+          > -->
+        </button>
+      </div>
+    </div>
+    <div class="section9">
+      <div class="video1 vid">
+        <img src="vid2.png" alt="" height="160px" width="280px" />
+      </div>
+      <div class="video2 vid">
+        <img src="vid1.png" alt="" height="160px" width="280px" />
+      </div>
+      <div class="video3 vid">
+        <img src="vid3.png" alt="" height="160px" width="280px" />
+      </div>
+      <div class="video1 vid">
+        <img src="vid1.png" alt="" height="160px" width="280px" />
+      </div>
+    </div>
+
+    <div class="section7"></div>
+    <div class="section6">
+      <h5>
+        "Nếu bạn muốn cải thiện kỹ năng lập trình trong vòng 7 ngày thì chần chờ
+        gì nữa, hãy đăng ký ngay để nhận chuỗi video miễn phí"
+      </h5>
+      <h3>Nhập ngay video để xem ngay 4 video lập trình Front-end</h3>
+      <div class="form">
+        <form action="">
+          <input type="email" placeholder="had@gmail.com" />
+          <button>Đăng ký</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot"></div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Series video lập trình website
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nhập email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="had@gmail.com"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Thoát
+            </button>
+            <button type="button" class="btn btn-primary">
+              <a
+                href="https://www.facebook.com/groups/889452008368355/?notif_id=1638222882661517&notif_t=page_linked_group_activity&ref=notif"
+                >Truy cập ngay</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
